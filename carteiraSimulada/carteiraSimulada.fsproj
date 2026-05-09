@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="FrontierHtml.fs" />
+    <Compile Include="Program.fs" />
+    <ProjectReference Include="..\Functions\Functions.fsproj" />
+    <None Include="..\data\dow30_returns.csv" CopyToOutputDirectory="PreserveNewest" Link="dow30_returns.csv" />
+  </ItemGroup>
+
+</Project>
